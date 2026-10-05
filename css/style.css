@@ -377,16 +377,11 @@ hr {
 
 /*                  Página portifólio          */
 
-#lucas{
-    background-color: #7a3d72;
-    color: white;
-}
-#marcelo{
+
+#marcelo, #lucas, #nicoli{
     background-color: #050505;
 }
-#nicoli{
-    background-color: var(--roxointenso);
-}
+
 .fimportifolio{
     margin-top: 40px;
     background-color: white;
@@ -400,7 +395,7 @@ hr {
 }
 .contateme{
     text-align: center;
-    background-color: #9e748a;
+    background-color: white;
 }
 .rede1 a{
     text-decoration: none;
