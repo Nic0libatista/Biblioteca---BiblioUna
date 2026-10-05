@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>BiblioUna</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="topo">
+                <h1>BiblioUna</h1>
+                <div class="perfil">
+                    <img src="img/perfil.png" alt="imagem de perfil" title="clique para sair da conta" onclick="pedirNovoNome()">
+                    <p id="nome"> Olá, nome! </p>
+                </div>
+            </div>
+            <hr>
+            <div class="topo2">
+                <ul>
+                    <li><a href="index.html">  Home  </a></li>
+                    <li><a href="acervo.html">  Acervo  </a></li>
+                    <li><a href="cafe.html">  Cafeteria  </a></li>
+                    <li><a href="noticias.html">  Notícias </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+   <section class="banner">
+        <picture>
+            <source media="(max-width:768px)" srcset="img/bannercllrcafe.png">
+            <img src="img/bannercafecanva.jpeg" alt="banner principal">
+        </picture>
+
+        
+    </section>
+    <div class="cafeitens">
+        <div class="item1">
+           <div>
+             <img src="img/graos.png" alt="grão de café">
+           </div>
+            <strong> Café importado da alemanha </strong>
+        </div>
+
+        <div class="item1">
+            <div>
+                <img src="img/livro.png" alt="livro">
+            </div>
+            <strong> Livros disponibilizados </strong>
+        </div>
+
+        <div class="item1">
+            <div>
+                <img src="img/pao.png" alt="pão">
+            </div>
+            <strong> Feito diariamente </strong>
+        </div>
+        <div class="item1">
+            <div>
+                <img src="img/mao.png" alt="mão com moeda">
+            </div>
+            <strong> Suas moedas valem 1 cookie </strong>
+        </div>
+    </div>
+
+     <div class="container">
+        <nav class="menucardapio">
+            <h2> Confira nosso cardápio </h2>
+            <ul>
+                <li><a href="#cafesselecionados">☕ Cafés</a></li>
+                <li><a href="#paesfresquinhos">🥖 Pães</a></li>
+                <li><a href="#nossosdoces">🍰 Doces</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="bannercafe" id="cafesselecionados">
+        <div class="banner-overlay">
+            <h1> Nossos cafés selecionados. </h1>       
+        </div>
+    </section>
+
+     <div class="container">
+        <section class="cafe">
+            <div class="grid_cafe">
+                <div class="cardapio">
+                    <img src="img/cappuccino.jpg" alt="capuccino">
+                    <h2> Cappuccino tradicional</h2>
+                    <p> Espresso, leite integral e canela</p>
+                </div>
+
+                 <div class="cardapio">
+                    <img src="img/cafecaramelo.jpg" alt="café gelado caramelo">
+                    <h2> Café gelado caramelo</h2>
+                    <p> Espresso, leite integral, caramelo, chantilly</p>
+                </div>
+
+                 <div class="cardapio">
+                    <img src="img/cafemocha.jpg" alt="café mocha">
+                    <h2> Café mocha</h2>
+                    <p> Espresso, ganache, leite integral, chantilly</p>
+                </div>
+
+                <div class="cardapio">
+                    <img src="img/coado.jpeg" alt="café coado">
+                    <h2> Café coado</h2>
+                    <p> água, pó de café</p>
+                </div>
+            </div>
+        </section>
+     </div>
+
+
+    <section class="bannercafe" id="paesfresquinhos">
+        <div class="banner-overlay">
+            <h1> Nossos paẽs fresquinhos. </h1>       
+        </div>
+    </section>
+
+     <div class="container">
+        <section class="cafe">
+            <div class="grid_cafe">
+                <div class="cardapio">
+                    <img src="img/pao.jpeg" alt="pão">
+                    <h2> Pão com carne seca</h2>
+                    <p> Pão, carne seca, tomate</p>
+                </div>
+
+                 <div class="cardapio">
+                    <img src="img/paoqueijo.jpg" alt="pão de queijo">
+                    <h2> Mini pão de queijo</h2>
+                    <p> queijo mussarela e parmessão</p>
+                </div>
+
+                 <div class="cardapio">
+                    <img src="img/minipizza.png" alt="mini pizza">
+                    <h2> Mini pizza frango</h2>
+                    <p> catupiry, frango, tomate</p>
+                </div>
+
+            </div>
+        </section>
+     </div>
+
+
+      <section class="bannercafe" id="nossosdoces">
+        <div class="banner-overlay">
+            <h1> Nossos doces. </h1>       
+        </div>
+    </section>
+
+     <div class="container">
+        <section class="cafe">
+            <div class="grid_cafe">
+                <div class="cardapio">
+                    <img src="img/tortaholandesa.jpeg" alt="torta holandesa">
+                    <h2> Torta Holandesa</h2>
+                    <p> Biscoito, chocolate, creme de leite</p>
+                </div>
+
+                 <div class="cardapio">
+                    <img src="img/cupcake.jpeg" alt="cupcake">
+                    <h2> Cupcake</h2>
+                    <p> Massa pão de ló, chantilly, brigadeiro</p>
+                </div>
+
+                 <div class="cardapio">
+                    <img src="img/pudim.jpg" alt="pudim">
+                    <h2> Mini pudim</h2>
+                    <p> Caramelo, leite condensado, gelatina</p>
+                </div>
+
+                <div class="cardapio">
+                    <img src="img/tacaBrownie.jpg" alt="taça brownie">
+                    <h2> Taça brownie</h2>
+                    <p> Sorvete, brownie, café, doce de leite</p>
+                </div>
+
+            </div>
+        </section>
+     </div>
+    
+    
+
+     <footer>
+        <div class="rodape">
+            <div class="mapa">
+                <h3> Nosso Endereço </h3>
+                <p>Rua dos Estudos, 45 — Bloco Central</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234085.38807404196!2d-46.905748775!3d-23.547453399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce584d91ca6d61%3A0x6ba05dbf5f45f24d!2sBiblioteca%20M%C3%A1rio%20de%20Andrade!5e0!3m2!1spt-BR!2sbr!4v1790980952484!5m2!1spt-BR!2sbr" width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <div class="horario">
+                 
+                <h3> Horario de funcionamento </h3>
+                <p><span>Seg - Sex:</span> 07h30 às 21h00</p>
+                <p><span>Sáb:</span> 08h00 às 12h00</p>
+                <p><span>Dom:</span> Fechado</p>
+                <p><span>Feriados:</span> consultar no instagram.</p>
+            </div>
+            <div class="contato">
+                 <h3> Telefone </h3>
+                <p>(11) 5555-5555</p>
+                <p> (11) 99999-9999</p>
+                <h3> Email </h3>
+                <p> bibliotecaUna@gmail.com </p>
+            </div>
+        </div>
+
+        <div class="direitos">
+            <p>&copy;2026. Desenvolvido por Lucas Moreira, Marcelo Zaneze & Nicoli Santos</p>
+            <p> <a href="portifolio.html"> Consulte nosso portifólio aqui </a></p>
+        </div>
+     </footer>
+
+
+</body>
+</html>

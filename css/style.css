@@ -1,0 +1,548 @@
+@import url('https://googleapis.com');
+:root{
+    --azulmarinho: #002438;
+    --ciano: #269797;
+    --marrom: #401701;
+    --marromescuro: #290f00;
+    --verdeescuro: #06321f;
+    --cinza: #2c3e50;
+    --roxo: #e2a9f1;
+    --roxinho:  #7a3d7296;
+    --roxoforte: #350028;
+    --roxointenso: #1d0011;
+
+    --fonte-titulos: 'Cormorant Garamond', serif;
+    --fonte-corpo: 'Source Sans 3', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    border: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-color: var(--roxinho);
+}
+
+.topo{
+    display: flex;
+    justify-content: space-around;
+    padding: 7px;
+}
+
+.perfil{
+    display: flex;
+    gap: 5px;
+}
+
+.topo2 ul{
+    display: flex;
+    list-style: none;
+    background-color: var(--roxointenso);
+    justify-content: center;
+    gap: 5px;
+    padding: 5px;
+    text-shadow: 0px 0px 5px black;
+}
+
+.topo2 ul li a, .topo2 .perfil p{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+    padding: 8px;
+    transition: 0.4s ease;
+    margin: 8px;
+}
+
+.topo2 ul li a:hover{
+    font-size: 2.1rem;
+}
+
+.banner img{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.sobre h2, .sobre h3{
+    color: var(--azulmarinho);
+    font-family: var(--fonte-titulos);
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.sobre p{
+    margin-bottom: 20px;
+}
+
+.grid{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:20px;
+}
+
+.grid div{
+    border: 2px solid var(--roxointenso);
+    padding: 20px;
+    text-align: center;
+}
+.galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 15px; 
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    padding: 0 10px;
+}
+
+.galeria img{
+    width: 203px;
+    height: 200px;
+}
+
+.rodape{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    background-color: var(--roxointenso);
+    gap: 40px;
+    
+}
+
+.mapa, .horario, .contato {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: var(--roxoforte);
+    padding: 30px;
+    color: white;
+    width: 300px;
+
+}
+
+.mapa h3, .horario h3, .contato h3{
+    font-size: 1.3rem;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+.direitos{
+    background-color: var(--roxoforte);
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+
+.direitos a{
+    color: white;
+}
+
+
+
+/*                        pagina acervo */
+
+.bannerlivro{
+   /* background-image: linear-gradient(180deg, rgba(30, 30, 30, 0.6) 0%, rgba(30, 30, 30, 0.3) 100%), url(../img/banner_book.jpg);
+   */ 
+   background-color: var(--marromescuro);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    height: 230px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.banner-overlay {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.banner-overlay h1{
+    padding: 20px 0 0 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.banner-overlay p{
+    font-size: 1.2rem;
+    box-shadow: 0,0,0,5 rgba(0, 0, 0, 0.3);
+}
+
+.grid_livros, .grid_cafe{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.livro img{
+ width: 150px;
+ height: 210px;
+}
+
+.livro h3{
+    font-size: 1.2rem;
+}
+
+.bannerconteudo{
+    padding: 20px;
+    background-color: var(--roxo);
+}
+
+.bannerconteudo img{
+    width: 100%;
+}
+
+.editoras{
+    text-align: center;
+    background-color: var(--roxo);
+    color: black;
+    padding: 30px;
+    font-size: 1.5rem;
+}
+
+.editorasfotos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.editorasfotos img{
+    width: 150px;
+    max-height: 150px;
+    transition: 0.4s ease-in;
+}
+
+.editorasfotos img:hover{
+    transform: scale(1.3);
+}
+
+hr {
+  border: none;
+  border-top: 2px solid var(--roxoforte);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0;
+}
+
+
+/*                     cardapio   */
+
+.bannercafe{
+    background-image: linear-gradient(180deg, rgba(30, 30, 30, 0.6) 0%, rgba(30, 30, 30, 0.3) 100%), url(../img/bannercafe.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    width: 100%;
+    max-width: 100vw;
+    height: 300px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#cafesselecionados{
+    background-image: url(../img/cafesselecionados.png);
+}
+
+#paesfresquinhos{
+    background-image: url(../img/paesfresquinhos.png);
+}
+
+#nossosdoces{
+    background-image: url(../img/nossosdoces.jpeg);
+}
+
+.cafeitens{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-around;
+}
+
+
+.menucardapio h2{
+    margin-top: 20px;
+    text-align: center;
+    color: var(--roxointenso);
+}
+
+.menucardapio ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 20px 0;
+    gap: 20px;
+}
+
+.menucardapio a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.menucardapio a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+
+.cardapio{
+    border: 1px solid #050505;
+    border-radius: 10px;
+    padding: 1px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.grid_cafe{
+    margin: 30px;
+}
+
+.grid_cafe .cardapio img{
+    width: 100%;
+    height: 200px;
+    border-radius: 0 0 25px 0;
+}
+
+/*                   noticia            */
+ #corponoticia{
+        background-color: wheat;
+    }
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+
+.noticia {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    background-color: #caa275;
+}
+
+
+.noticiatxt{
+    max-width: 300px;
+    padding: 10px;
+}
+
+.botao{
+    margin-top: 30px;
+    padding: 10px;
+    max-width: 70px;
+    border-radius: 10px;
+    background-color: #2c3e50;
+    text-align: center;
+}
+
+.botao a{
+    color: white;
+    text-decoration: none;
+}
+
+.botao:hover{
+    border: 1px solid black;
+}
+.noticia img{
+    width: 150px;
+    height: 215px;
+    padding: 12px;
+}
+
+/*                  Página portifólio          */
+
+#lucas{
+    background-color: #7a3d72;
+    color: white;
+}
+#marcelo{
+    background-color: #050505;
+}
+#nicoli{
+    background-color: var(--roxointenso);
+}
+.fimportifolio{
+    margin-top: 40px;
+    background-color: white;
+    text-align: center;
+}
+
+.redessociais{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 30px 0;
+}
+.contateme{
+    text-align: center;
+    background-color: #9e748a;
+}
+.rede1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.rede1 a:hover{
+    color: var(--roxo);
+}
+
+.textoportifolio {
+    max-width: 800px;
+    width: 90%;
+    margin-top: 100px;
+    margin: 0 auto;
+    text-align: justify;  
+    font-size: 2rem;
+    background-color: #9e748a;
+    padding: 30px;
+    border-radius: 10px 25px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    .topo2 ul li a{
+        font-size: 1rem;
+        margin: 5px;
+    }
+
+    .grid, .grid_cafe{
+        display:block;
+
+    }
+    .grid div{
+        margin: 20px;
+    }
+
+    .sobre h2, .sobre h3{
+        text-align: center;
+    }
+
+    .rodape{
+        display: block;
+    }
+    .mapa, .horario, .contato{
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .direitos{
+        background-color: black;
+    }
+
+    /*                acervo         */
+    .banner-overlay h1{
+    padding: 20px 0 0 0;
+    color: white;
+    font-size: 3rem;
+    }
+    
+
+    .banner-overlay p{
+    color: white;
+    }
+
+    .grid_livros{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /*                cardapio        */
+    .cardapio{
+        background-color: white;
+        color: black;
+        border: none;
+        margin-top: 10px;
+    }
+    .cafeitens{
+    display: block;
+    }
+    .cafeitens img{
+        margin-top: 10px;
+    }
+
+    .menucardapio a {
+    padding: 10px 12px;
+}
+
+
+    /*              notícias */
+    #corponoticia{
+        background-color: wheat;
+    }
+     .noticias {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .noticia {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: white;
+    }
+
+    .noticia img{
+        width: 100%;
+    }
+
+    /*            portifólioo            */
+
+    .redessociais{
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+
+    .rede1 a{
+        font-size: 1.3rem;
+    }
+
+    .textoportifolio{
+        text-align: center;
+        font-size: 1rem;
+        padding: 15px; 
+        border-radius: 0;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        background-color: transparent !important;
+        color: white;
+    }
+
+}
+
+@media screen and (max-width: 1300px){
+    .sobre h2, .sobre h3, .sobre p{
+        text-align: center;
+    }
+}
