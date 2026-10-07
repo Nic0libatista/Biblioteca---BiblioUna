@@ -378,13 +378,16 @@ hr {
 /*                  Página portifólio          */
 
 
-#marcelo, #lucas, #nicoli{
+#bodyportifolio{
     background-color: #050505;
+}
+#bodyportifolio .topo{
+    color: white;
 }
 
 .fimportifolio{
-    margin-top: 40px;
-    background-color: white;
+    padding-top: 30px;
+    background-color: black;
     text-align: center;
 }
 
@@ -414,7 +417,7 @@ hr {
     margin: 0 auto;
     text-align: justify;  
     font-size: 2rem;
-    background-color: #9e748a;
+    color: white;
     padding: 30px;
     border-radius: 10px 25px;
 }
@@ -522,9 +525,13 @@ hr {
         font-size: 1.3rem;
     }
 
+    #bodyportifolio .banner{
+        margin-bottom: 12px;
+    }
     .textoportifolio{
+        margin-top: 20px;
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 15px; 
         border-radius: 0;
         width: 100%;

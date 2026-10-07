@@ -16,3 +16,9 @@ function pedirNovoNome() {
     localStorage.setItem("nomeUsuario", nome);
     document.getElementById("nome").innerHTML = "Olá, " + nome + "!";
 }
+
+function semLink(nomeApp){
+    alert ("Desculpe, parece que esse desenvolvedor ainda não está no " + nomeApp +" :(" )
+}
+
+
